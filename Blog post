@@ -1,0 +1,76 @@
+The keyword argument, which can also be called the “Named Argument”, is an argument passed to a function or method that is preceded by a keyword and an equal sign.
+
+When calling functions this way, the order or position of the arguments can be changed and the caller can identify the arguments by the parameter name.
+
+The Python interpreter is able to use the keywords provided to match the values with the parameter – this allows the user to skip arguments and place them out of order. A function can contain as many keywords as possible but only one value can be assigned to each keyword.
+
+The function and keywords must be called at the end of the code to print the function. The general syntax of a keyword argument looks like this:
+
+function(keyword = value)
+
+where;
+
+function = function name (always preceded by def)
+
+keyword = keyword argument
+
+value = value of object passed as the keyword.
+
+▶️An example:
+
+def show(name = 'Ace', age = '23'):
+
+#defines the function as well as keyword and values
+
+print(name, age)
+
+#prints the values assigned to the various keywords.
+
+show('Ace', '23')
+
+#prints the name and age in the same order respectively.
+
+​In the above code;
+
+(show) = function name
+
+(name, age) = keyword arguments
+
+(’Ace’, ‘23’) = values
+
+Hence, Ace becomes the name and 23 becomes the age.
+
+⚠️Note: The order of keyword arguments don’t matter but the values do.
+
+▶️For example:
+
+def show(age = '23', name = 'Ace'):
+
+print(name, age)
+show('23', 'Ace')
+
+#prints the name and age as called in the print function.
+
+However, when we change the values of the keywords, the Python interpreter saves it and prints it out in that manner, which provides the wrong information.
+
+▶️For example:
+
+def show(name = '23', age = 'Ace'):
+
+print(name, age)
+
+show('23', 'Ace')
+
+#prints the name and age assigned in the function.
+
+In certain cases, the errors can be easily identified, but for mathematical solutions, it may not be as easy. Hence, values must always be assigned correctly.
+
+➡️What are the benefits of using keyword Arguments?
+
+▶️It is used to make function calls more explicit.
+
+▶️The arrangement of the arguments can be done in a way that makes them readable.
+
+▶️Arguments are called by their keywords which makes it clear on what it represents.
+
+▶️Arguments that have default values can be left out.
